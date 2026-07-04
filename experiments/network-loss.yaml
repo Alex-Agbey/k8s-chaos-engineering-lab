@@ -1,0 +1,9 @@
+apiVersion: litmuschaos.io/v1alpha1
+kind: ChaosEngine
+metadata:
+  name: engine-network-loss
+spec:
+  engineState: "active"
+  chaosServiceAccount: litmus-admin
+  experiments:
+    - name: pod-network-loss
